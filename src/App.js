@@ -1,9 +1,9 @@
 // Import custom components:
-
-import Expenses from './components/Expenses';
+import React from 'react';
+import Expenses from './components/Expenses/Expenses';
 
 // App function to handle all components:
-function App() {
+const App = () => {
   const expenses = [
     {
       id: 'e1',
@@ -38,6 +38,18 @@ function App() {
       <Expenses items={expenses}/>
     </div>
   );
+
+
+  // // Alternate for above code (non-JSX React JS code):
+  // // (Under the hood code created when you use JSX)
+  // // remember: import React from 'react';
+  // return React.createElement(
+  //   'div',
+  //   {},
+  //   React.createElement('h2', {}, "Let\'s get started!"),
+  //   React.createElement(Expenses, {items: expenses})
+  // );
+
 }
 
 export default App; //export so it may be imported
