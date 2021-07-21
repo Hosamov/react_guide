@@ -1,5 +1,7 @@
 // Import custom components:
 import React from 'react';
+
+import NewExpense from './components/NewExpense/NewExpense';
 import Expenses from './components/Expenses/Expenses';
 
 // App function to handle all components:
@@ -34,7 +36,7 @@ const App = () => {
   // JSX (JavaScript XML) code below:
   return (
     <div>
-      <h2>Let's get started!</h2>
+      <NewExpense />
       <Expenses items={expenses}/>
     </div>
   );
